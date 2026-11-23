@@ -1,0 +1,41 @@
+{
+  "name": "gridbeat-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for querying GridBeat chord shapes and generating print-optimized chord sheet PDFs",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "gridbeat-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "mcp",
+    "gridbeat",
+    "chords",
+    "ableton-push",
+    "launchpad",
+    "piano",
+    "guitar",
+    "ukulele",
+    "pdf"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "pdfkit": "^0.16.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/pdfkit": "^0.13.7",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^3.0.0"
+  }
+}

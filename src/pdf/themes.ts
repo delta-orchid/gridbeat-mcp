@@ -1,0 +1,113 @@
+import { PdfTheme } from "../types.js";
+
+export interface ThemePalette {
+  name: PdfTheme;
+  pageBg: string;
+  cardBg: string;
+  cardBorder: string;
+  titleText: string;
+  subtitleText: string;
+  badgeBg: string;
+  badgeText: string;
+  inactiveCellBg: string;
+  inactiveCellBorder: string;
+  inactiveCellText: string;
+  rootBorder: string;
+  chordBorder: string;
+  bwRootBg: string;
+  bwRootText: string;
+  bwChordBg: string;
+  bwChordText: string;
+  pianoWhiteBg: string;
+  pianoBlackBg: string;
+  pianoKeyBorder: string;
+  fretLine: string;
+  stringLine: string;
+  nutLine: string;
+  markerFretBg: string;
+  markerFretText: string;
+}
+
+export const THEMES: Record<PdfTheme, ThemePalette> = {
+  color: {
+    name: "color",
+    pageBg: "#ffffff",
+    cardBg: "#ffffff",
+    cardBorder: "#e4e4e7",
+    titleText: "#09090b",
+    subtitleText: "#52525b",
+    badgeBg: "#f4f4f5",
+    badgeText: "#18181b",
+    inactiveCellBg: "#f4f4f5",
+    inactiveCellBorder: "#d4d4d8",
+    inactiveCellText: "#a1a1aa",
+    rootBorder: "#09090b",
+    chordBorder: "#27272a",
+    bwRootBg: "#18181b",
+    bwRootText: "#ffffff",
+    bwChordBg: "#d4d4d8",
+    bwChordText: "#09090b",
+    pianoWhiteBg: "#ffffff",
+    pianoBlackBg: "#18181b",
+    pianoKeyBorder: "#3f3f46",
+    fretLine: "#a1a1aa",
+    stringLine: "#71717a",
+    nutLine: "#18181b",
+    markerFretBg: "#52525b",
+    markerFretText: "#ffffff",
+  },
+  bw: {
+    name: "bw",
+    pageBg: "#ffffff",
+    cardBg: "#ffffff",
+    cardBorder: "#a1a1aa",
+    titleText: "#000000",
+    subtitleText: "#3f3f46",
+    badgeBg: "#f4f4f5",
+    badgeText: "#000000",
+    inactiveCellBg: "#ffffff",
+    inactiveCellBorder: "#d4d4d8",
+    inactiveCellText: "#a1a1aa",
+    rootBorder: "#000000",
+    chordBorder: "#3f3f46",
+    bwRootBg: "#000000",
+    bwRootText: "#ffffff",
+    bwChordBg: "#d4d4d8",
+    bwChordText: "#000000",
+    pianoWhiteBg: "#ffffff",
+    pianoBlackBg: "#18181b",
+    pianoKeyBorder: "#27272a",
+    fretLine: "#71717a",
+    stringLine: "#52525b",
+    nutLine: "#000000",
+    markerFretBg: "#27272a",
+    markerFretText: "#ffffff",
+  },
+  dark: {
+    name: "dark",
+    pageBg: "#09090b",
+    cardBg: "#18181b",
+    cardBorder: "#3f3f46",
+    titleText: "#fafafa",
+    subtitleText: "#a1a1aa",
+    badgeBg: "#27272a",
+    badgeText: "#e4e4e7",
+    inactiveCellBg: "#27272a",
+    inactiveCellBorder: "#3f3f46",
+    inactiveCellText: "#71717a",
+    rootBorder: "#ffffff",
+    chordBorder: "#d4d4d8",
+    bwRootBg: "#fafafa",
+    bwRootText: "#09090b",
+    bwChordBg: "#52525b",
+    bwChordText: "#fafafa",
+    pianoWhiteBg: "#e4e4e7",
+    pianoBlackBg: "#09090b",
+    pianoKeyBorder: "#52525b",
+    fretLine: "#52525b",
+    stringLine: "#71717a",
+    nutLine: "#e4e4e7",
+    markerFretBg: "#3f3f46",
+    markerFretText: "#fafafa",
+  },
+};
