@@ -1,11 +1,18 @@
 {
   "name": "gridbeat-mcp",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "MCP server for querying GridBeat chord shapes and generating print-optimized chord sheet PDFs",
   "type": "module",
   "main": "dist/index.js",
   "bin": {
     "gridbeat-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leouofa/gridbeat-mcp.git"
   },
   "scripts": {
     "build": "tsc",
